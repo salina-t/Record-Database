@@ -1,0 +1,120 @@
+Script started on Mon 24 Apr 2023 07:29:00 PM HST
+]0;salinat@uhx02:~/ics212/project2[?1034huhx02:/home/s/salinat/ics212/project2% rm *.o
+]0;salinat@uhx02:~/ics212/project2uhx02:/home/s/salinat/ics212/project2% make -f release.mak
+g++ -ansi -pedantic-errors -Wall -c llist.cpp
+g++ -ansi -pedantic-errors -Wall -c user_interface.cpp
+g++ -o project llist.o user_interface.o
+]0;salinat@uhx02:~/ics212/project2uhx02:/home/s/salinat/ics212/project2% ./project [K
+Welcome to the bank database.
+To access the database, please select an option:
+
+add: add a new record in the database
+printall: Print all records in the database
+find: Find record(s) with a specified account #
+delete: Delete existing record(s) from the database using the account # as a key
+quit: Quit the program
+k
+
+Invalid option. Please choose one of the listed options.
+add: add a new record in the database
+printall: Print all records in the database
+find: Find record(s) with a specified account #
+delete: Delete existing record(s) from the database using the account # as a key
+quit: Quit the program
+add
+Please enter your account number
+123
+Please enter your name
+meow meow meow  
+Please enter your address. Enter the "%" character to enter
+cats st.
+%
+Action completed. Please select a new option.
+
+add: add a new record in the database
+printall: Print all records in the database
+find: Find record(s) with a specified account #
+delete: Delete existing record(s) from the database using the account # as a key
+quit: Quit the program
+quit
+]0;salinat@uhx02:~/ics212/project2uhx02:/home/s/salinat/ics212/project2% rm *.o
+]0;salinat@uhx02:~/ics212/project2uhx02:/home/s/salinat/ics212/project2% make -f debug.mak [K
+g++ -ansi -pedantic-errors -Wall -c -Ddebug llist.cpp
+g++ -ansi -pedantic-errors -Wall -c -Ddebug user_interface.cpp
+g++ -o project_debug llist.o user_interface.o
+]0;salinat@uhx02:~/ics212/project2uhx02:/home/s/salinat/ics212/project2% ./project_debut[Kg
+-----------------------DEBUG MODE INFORMATION-----------------------
+FUNCTION: readfile
+
+--------------------------------------------------------------------
+
+
+-----------------------DEBUG MODE INFORMATION-----------------------
+FUNCTION: addRecord
+PARAMETERS: 
+(int) accountno: 123
+char []) name: meow meow meow
+(char []) address: cats st.
+
+--------------------------------------------------------------------
+-----------------------DEBUG MODE INFORMATION-----------------------
+FUNCTION: addRecord
+PARAMETERS: 
+(int) accountno: 22001
+char []) name: Cracker Grape
+(char []) address: 2543 woof st
+
+--------------------------------------------------------------------
+-----------------------DEBUG MODE INFORMATION-----------------------
+FUNCTION: addRecord
+PARAMETERS: 
+(int) accountno: 23000
+char []) name: Greg the 1st
+(char []) address: 444 Home St
+
+--------------------------------------------------------------------
+
+Debug mode ON
+
+Welcome to the bank database.
+To access the database, please select an option:
+
+add: add a new record in the database
+printall: Print all records in the database
+find: Find record(s) with a specified account #
+delete: Delete existing record(s) from the database using the account # as a key
+quit: Quit the program
+printall
+Account Number: 123
+Account Name: meow meow meow
+Account Address: cats st.
+
+Account Number: 22001
+Account Name: Cracker Grape
+Account Address: 2543 woof st
+
+Account Number: 23000
+Account Name: Greg the 1st
+Account Address: 444 Home St
+
+Action completed. Please select a new option.
+
+add: add a new record in the database
+printall: Print all records in the database
+find: Find record(s) with a specified account #
+delete: Delete existing record(s) from the database using the account # as a key
+quit: Quit the program
+quit
+-----------------------DEBUG MODE INFORMATION-----------------------
+FUNCTION: writefile
+--------------------------------------------------------------------
+-----------------------DEBUG MODE INFORMATION -----------------------
+
+FUNCTION: cleanup
+---------------------------------------------------------------------
+
+
+]0;salinat@uhx02:~/ics212/project2uhx02:/home/s/salinat/ics212/project2% exit
+exit
+
+Script done on Mon 24 Apr 2023 07:30:08 PM HST
